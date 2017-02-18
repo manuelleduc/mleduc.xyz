@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Object Algebra Composition
+title: Object Algebras Composition
 date : 2016-10-20 14:21:33 +0200
 categories: scala object
-tags: object algebra composition
+tags: object algebras composition
 ---
 
 # Introduction
 
-This article is composed of two parts. The first part explains the concept of "object algebra" using a toy example. The second part reuse the same toy example and extends it.
+This article is composed of two parts. The first part explains the concept of "object algebras" using a toy example. The second part reuse the same toy example and extends it.
 
-# Object algebra
+# Object algebras
 
 The expression problem, as presented in  [Oleksandr Manzyuk's blog](https://oleksandrmanzyuk.wordpress.com/2014/06/18/from-object-algebras-to-finally-tagless-interpreters-2/#sec-2), is a way to offer the capability for a DSL to be extensible either in term of operations and in term of expression types.
 
@@ -52,7 +52,7 @@ The interpreters of the language are named *object algebras*. **EvalExpAlg** int
 
 Since both **PrintExpAlg** and **EvalSubExpAlg** are able to interpret **SubExpAlg** they are also able to interpret any language previously defined using **ExpAlg**.
 
-> This point is very important in language reuse. Using object algebra a developer
+> This point is very important in language reuse. Using object algebras a developer
 >
 > * is able to extend a language without modifications of the existing code base.
 > * know that any program written with a current version of an algebra will be interpretable as well with any future extended interpreters of the language
@@ -65,13 +65,13 @@ object Examples extends App {
     import alg._
       add(lit(3), lit(4))
   }
-	
+
   // An expression using subtraction too
   def exp2[E](alg : SubExpAlg[E]) = {
     import alg._
       sub(exp1(alg), lit(4))
   }
-  
+
   def test() : Unit = {
     val ea = new EvalExpAlg() {}
     val esa = new EvalSubExpAlg() {}
@@ -82,7 +82,7 @@ object Examples extends App {
     println("Evaluation of exp2 \"" + exp2(pa).print() + "\" is: " + exp2(esa).eval())
     // Evaluation of exp2 "3 + 4 - 4" is: 3
   }
-  
+
   text()
 }
 ```
@@ -120,7 +120,7 @@ trait Eval[X] {
 
 By doing so we allow the *object algebras* of integer and boolean to share a common type.
 
-Now that it done, here is the code of the *object algebras*. 
+Now that it done, here is the code of the *object algebras*.
 
 ```scala
 trait EvalBoolExpAlg extends BoolExpAlg[Eval[_], Eval[Boolean]] {
@@ -177,7 +177,7 @@ println(s"""${program3(printB).print()} ---> ${program3(evalB).eval()}""")
 
 ## Language composition
 
-We are now at a point where we can ask ourselves, can I mix easily my integer language with my boolean ? 
+We are now at a point where we can ask ourselves, can I mix easily my integer language with my boolean ?
 
 I hope that the following program will proves you that the answer is yes !
 
@@ -214,7 +214,7 @@ To meet those two objectives the following pieces of code have been needed.
 // object algebra interface :
 trait BoolExpAlg[A, E <: A] { // knowing a type A, E is a subtype of A
   // [...]
-  
+
   // knowing a type A, F1 and F2 are both subtype of A
   // the implicit enforce the type equality of F1 and F2 si both F1 and F2 are different subtypes of A, the scala refuses to compile.
   def equal[F1 <: A, F2 <: A](left: F1, right: F2)(implicit ev: F1 =:= F2): E
@@ -223,7 +223,7 @@ trait BoolExpAlg[A, E <: A] { // knowing a type A, E is a subtype of A
 // Eval[_] defines that anything "evaluable" is accepted in the equal method.
 // Eval[Bool] defines the type of the object algebra itself.
 trait EvalBoolExpAlg extends BoolExpAlg[Eval[_], Eval[Boolean]] {
-  
+
   // the signature of the equal method, derived from the previous type definition
   override def equal[F1 <: Eval[_], F2 <: Eval[_]](left: F1, right: F2)(implicit ev: =:=[F1, F2]): Eval[Boolean] = new Eval[Boolean] {
     override def eval(): Boolean = left.eval() == right.eval()
@@ -234,7 +234,7 @@ trait EvalBoolExpAlg extends BoolExpAlg[Eval[_], Eval[Boolean]] {
 
 # Conclusion
 
-For now my opinion of object algebra is optimistic and even if the development of more complex DSL might lead to unexpected issues, the implementation of this small example have been surprisingly easy.
+For now my opinion of object algebras is optimistic and even if the development of more complex DSL might lead to unexpected issues, the implementation of this small example have been surprisingly easy.
 
 We can still observe that in order to add more flexibility we had to edit once a previously defined code. This is not mandatory and more verbose solution might be envisioned to do the same thing without touching any previously defined source code.
 
@@ -246,4 +246,4 @@ I hope this article gave you a first insight of the advantages and limitations o
 
 # Good reads
 
-I have been introduced to the concept of object algebra by this awesome talk :  "[Using Object Algebras To Design Embedded Domain Specific Languages](https://www.youtube.com/watch?v=snbsYyBS4Bs)" by [Julien Richard-Foy](http://julien.richard-foy.fr/) at [Curry On'16](http://curry-on.org/2016/).
+I have been introduced to the concept of object algebras by this awesome talk :  "[Using Object Algebras To Design Embedded Domain Specific Languages](https://www.youtube.com/watch?v=snbsYyBS4Bs)" by [Julien Richard-Foy](http://julien.richard-foy.fr/) at [Curry On'16](http://curry-on.org/2016/).
