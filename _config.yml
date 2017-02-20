@@ -22,6 +22,9 @@ url: "http://mleduc.xyz" # the base hostname & protocol for your site, e.g. http
 twitter_username: manuel_leduc
 github_username:  manuelleduc
 
+username: manuelleduc
+repo: mleduc.xyz
+
 # Build settings
 markdown: kramdown
 theme: minima
