@@ -1,0 +1,20 @@
+language: ruby
+
+cache: bundler
+
+install:
+  - bundle install
+
+before_script:
+  - chmod +x build.sh
+
+script:
+  - "./build.sh"
+
+branches:
+  only:
+    - master
+
+env:
+  global:
+    secure: "Y3rcq+EzBrAYX2npQhvY1PRMdOIqa26BJ1yOSXjn2fI2x3nx31eS4K++Nrcmfv5GjfREoJfhnDWRxgRFYld9c69E5+kPkYS7rdcNETCKgmEI1DpNghQkBrky/+wS/T3wZNKikBw0vNsvn3UVcGSTKpI41Wv54NJdsc6G3vnBy89ELQI1ic+w1AHKCzS+QsPtH9WYC7vN5e+jIea8h7HNf1mTDv5lPgbgXO5a+GTHlk9L7vVC5GqTqy2CUpKPB+yUN+MsPseBUW5ksrSaVdqpVRyXl4lecsdo1YYWNrakbYyuiHJpNXEsc1yx9MFQfTFIcGmdRzboqUbGTFL/HAR9r1+R13X2vD67SMSPMfBbVunAmI3rE2SO9tXoQ3DiM8MUJf9sXAZlUfl/OiZh29AVuIThkGzDyGRVKSFNZvzOjbw0YNFn/jkN17LwphvRBmkVB2vNA2gnbfhEakejoneocvQexEFuAUXtm+6b8CehpV65d6ESeXEsNvvyWtcOQDe4s2mN74npgVbABcixBVYMKSCdQzHBEF4gHkPALk8k3XVHpymIGnjwIg/5vFpQn2CGTSQdwqFq8V5hZc2JAhNkHYwbsSsozMgFvMkXoAh9PunynchUnpSGrbHp00hpsDWKtc8oqH+RB2a4sxdktoBmTrGYwiGedYz21nuymLmZa/c="
