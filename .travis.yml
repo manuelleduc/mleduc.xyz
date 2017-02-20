@@ -8,11 +8,8 @@ cache: bundler
 install:
   - bundle install
 
-before_script:
-  - chmod +x build.sh
+script: bundle exec rake site:deploy --quiet
 
-script:
-  - "./build.sh"
 
 branches:
   only:
