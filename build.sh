@@ -2,7 +2,7 @@
 
 set -e
 
-DEPLOY_REPO="https://${GH_TOKEN}@github.com/pauldambra/pauldambra.github.io.git"
+DEPLOY_REPO="https://${GH_TOKEN}@github.com/manuelleduc/mleduc.xyz.git"
 
 function main {
 	clean
@@ -45,7 +45,7 @@ function deploy {
 	git add -A
 	git status
 	git commit -m "Lastest site built on successful travis build $TRAVIS_BUILD_NUMBER auto-pushed to github"
-	git push $DEPLOY_REPO master:master
+	git push $DEPLOY_REPO master:master gh-pages
 }
 
 
