@@ -19,9 +19,11 @@
           <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
           {% endif %}
         {% endfor %}
+        {% comment %}
           <a class="page-link" href="{{ site.url }}/jirafeau/">File upload</a>
           <a class="page-link" href="{{ site.url }}/zerobin/">Paste-bin</a>
           <a class="page-link" href="{{ site.url }}/zenphoto/">Photos</a>
+        {% endcomment %}
           <a class="page-link" href="{{ site.url }}/cv/">Résumé</a>
       </div>
     </nav>
