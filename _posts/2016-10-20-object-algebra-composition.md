@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Object Algebras Composition
-date : 2016-10-20 14:21:33 +0200
+date: 2016-10-20 14:21:33 +0200
 categories: scala object
 tags: object algebras composition
 ---
