@@ -16,6 +16,7 @@ Nonetheless, I've spend enough time digging in the code this afternoon to feel l
 
 The following piece of java code is an example of how to easily define a Feature Model and to check some simple properties on it.
 
+It depends on `de.ovgu.featureide.fm.core;bundle-version="3.4.1"` (FeatureIDE [update site](http://featureide.cs.ovgu.de/update/v3/) and [source code](https://github.com/FeatureIDE/FeatureIDE))
 
 ```java
 package fr.inria.diverse.melange;
