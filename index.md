@@ -5,7 +5,7 @@
 layout: home
 ---
 
-I am currently a PhD in the [DiverSE](https://diverse-project.github.io/) team
+I am currently a PhD in the [DiverSE](http://diverse.irisa.fr/) team
 with [Benoit Combemale](http://people.irisa.fr/Benoit.Combemale/) and [Olivier Barais](http://olivier.barais.fr/).
 
 I am interested in all aspect of Software Language Engineering and Language Engineering.
