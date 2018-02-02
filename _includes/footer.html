@@ -4,28 +4,40 @@
 
     <h2 class="footer-heading">{{ site.title | escape }}</h2>
 
+    <stong>Teams</strong>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li><a href="http://diverse.irisa.fr/">DiverSE</a></li>
+          <li><a href="https://smart-researchteam.github.io/">Sm@rt</a></li>
+
+        </ul>
+      </div>
+    </div>
+
     <stong>Projects</strong>
 
     <div class="footer-col-wrapper">
       <div class="footer-col footer-col-1">
         <ul class="contact-list">
-          <li>Agile Language Engineering <a href="http://gemoc.org/ale/">ALE</a></li>
+          <li>Agile Language Engineering <a href="http://gemoc.org/ale/">ALE</a> (associated with the <a href="https://www.cwi.nl/research/groups/software-analysis-and-transformation">SWAT</a> team)</li>
         </ul>
       </div>
     </div>
     <div class="footer-col-wrapper">
       <div class="footer-col footer-col-1">
         <ul class="contact-list">
-          <li>
-            {% if site.author %}
-              {{ site.author | escape }}
-            {% else %}
-              {{ site.title | escape }}
-            {% endif %}
-            </li>
             {% if site.email %}
-            <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+            <li>
+              <span><img style="height: 15px;" src="{{ site.baseurl }}/assets/icons/envelope-closed.svg" /></span>
+              <span><a href="mailto:{{ site.email }}">{{ site.email }}</a>
+            </li>
             {% endif %}
+            <li style="color: #000">
+              <span><img style="height: 15px;" src="{{ site.baseurl }}/assets/icons/phone.svg" /></span>
+              <span>+33 299 847 304</span>
+            </li>
         </ul>
       </div>
 
