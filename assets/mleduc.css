@@ -1,3 +1,10 @@
 #ynh-overlay-switch {
   display: none !important;
 }
+
+.photo {
+  width: 150px;
+  float: right;
+  display: inline;
+  border-radius: 50%;
+}
