@@ -15,7 +15,7 @@
 # in the templates via {{ site.myvariable }}.
 title: Manuel Leduc
 email: manuel.leduc <<>> irisa.fr
-baseurl: "/blog" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://mleduc.xyz" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: manuel_leduc
 github_username:  manuelleduc
