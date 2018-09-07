@@ -1,0 +1,323 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Object Algebras</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/mleduc.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/agate.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-markdown>
+					<script type="text/template">
+						# Object Algebras
+
+						https://mleduc.xyz/thesis_slides/slides_object_algebra
+
+<!--
+						- Expression problem
+						  - Existing solutions (OO: visitor, Functional: GADT)
+						- Object Algebra anatomy
+						- Object Algebra generation
+						- Object Algebra composition
+						- Object Algebra current limitations
+						- What's next
+						  - Model type + Type conformance
+							- Operational language for EMF
+-->
+					</script>
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+						# Expression Problem
+
+						Philip Wadler, 12 November 1998
+						> Whether a language can solve the Expression Problem is a salient indicator of its capacity for expression.
+
+						> One can think of cases as rows and functions as columns in a table.<br />
+
+						<small>Expression Problem : [http://homepages.inf.ed.ac.uk/wadler/\[...\]/expression.txt](http://homepages.inf.ed.ac.uk/wadler/papers/expression/expression.txt)</small>
+					</script>
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+						# Expression Problem
+
+						| Paradigm        | Syntax           | Semantic  | Implementation pattern |
+						| ------------- |-------------| -----| ------ |
+						| *Object Oriented*      | Extensible | Fixed | Visitor |
+						| *Functional*      | Fixed      |   Extensible | Algebraic Datatypes |
+
+						## We want to be extensible in both directions!
+
+						<small>Expression Problem : [http://homepages.inf.ed.ac.uk/wadler/\[...\]/expression.txt](http://homepages.inf.ed.ac.uk/wadler/papers/expression/expression.txt)</small>
+					</script>
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+						# Use case
+
+						## Step 1
+
+						- A simple Sum language: "((1 + 2) + 3)"
+						- An Evaluation of a Sum : "((1 + 2) + 3)" -> 6
+
+						## Step 2
+
+						- Extension of Sum with a substraction operation
+						- Extension of the Evaluation
+						- A PrettyPrint of a Sum + Sub
+					</script>
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+					# Step 1
+					# Meta model
+
+					![step1_metamodel](images/step1_metamodel.svg)
+					</script>
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+					# Step 1
+					# Abstract Algebra
+
+					```java
+					public interface SimpleexpressionAlgebra<A> {
+
+						A constant(final Constant constant);
+
+						A sum(final Sum sum);
+
+						public default A $(final Expression expression) {
+							int classifierID = expression.eClass().getClassifierID();
+							if (classifierID == SimpleexpressionPackage.CONSTANT) { // instanceof Constant
+								return this.constant((Constant) expression);
+							} else if (classifierID == SimpleexpressionPackage.SUM) { // instanceof Sum
+								return this.sum((Sum) expression);
+							}
+							throw new RuntimeException("Unknow Expression " + expression);
+						}
+					}
+					```
+					</script>
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+					# Step 1
+					# Evaluation Algebra
+
+					```java
+					public interface EvaluationSimpleexpressionAlgebra
+						extends SimpleexpressionAlgebra<Integer> {
+
+						@Override
+						default Integer constant(Constant constant) {
+							return constant.getValue();
+						}
+
+						@Override
+						default Integer sum(Sum sum) {
+							return $(sum.getLeft()) + $(sum.getRight());
+						}
+
+					}
+
+					```
+					</script>
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+					# Step 1
+					# Execution
+
+					```java
+					public class SimpleexpressionExecution {
+						public static void main(String[] args) {
+							EvaluationSimpleexpressionAlgebra esa = new EvaluationSimpleexpressionAlgebra() {
+							};
+
+							Expression expression = loadModel(); // model instantiation
+							Integer result = esa.$(expression);
+							System.out.println(result); // 42
+						}
+
+						private static Expression loadModel() {
+							// model loading
+							return ...;
+						}
+					}
+					```
+					</script>
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+					# Step 2
+					# Meta model
+
+					![aa](images/step2_metamodel.svg)
+					</script>
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+					# Step 2
+					# Abstract Algebra
+
+					```java
+					public interface SubexpressionAlgebra<A>
+						extends SimpleexpressionAlgebra<A> {
+
+						A sub(Sub sub);
+
+						@Override
+						default A $(Expression expression) {
+							int classifierID = expression.eClass().getClassifierID();
+							if (classifierID == SimpleexpressionPackage.SUB) { // instanceof Sub
+								return sub((Sub) expression);
+							}
+							return SimpleexpressionAlgebra.super.$(expression);
+						}
+
+					}
+					```
+					</script>
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+					# Step 2
+					# Evaluation Algebra
+
+					```java
+					public interface EvaluationSubexpressionAlgebra
+							extends SubexpressionAlgebra<Integer>,
+									EvaluationSimpleexpressionAlgebra {
+
+						@Override
+						default Integer sub(Sub sub) {
+							return $(sub.getLeft()) - $(sub.getRight());
+						}
+
+					}
+					```
+					</script>
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+					# Step 2
+					# Prettyprint Algebra
+
+					```java
+					public interface PrettyprintAlgebra
+						extends SubexpressionAlgebra<String> {
+
+						default String constant(Constant constant) {
+							return String.valueOf(constant.getValue());
+						}
+
+						default String sum(Sum sum) {
+							return "(" + $(sum.getLeft()) + " + " + $(sum.getRight()) + ")";
+						}
+
+						default String sub(Sub sub) {
+							return "(" + $(sub.getLeft()) + " - " + $(sub.getRight()) + ")";
+						}
+					}
+					```
+					</script>
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+					# Step 2
+					# Execution
+
+					```java
+					public class SimpleexpressionExecution {
+						public static void main(String[] args) {
+							EvaluationSubexpressionAlgebra esea = new EvaluationSubexpressionAlgebra() {
+							};
+							PrettyprintAlgebra ppa = new PrettyprintAlgebra() {
+							};
+
+							Expression expression = loadModel(); // model instantiation
+							Integer result = esea.$(expression); // 42
+							String pp = ppa.$(expression);
+							System.out.println(ppa + " ==> " + result); // ((40 + 4) - 2) ==> 42
+						}
+
+						private static Expression loadModel() {
+							// TODO Auto-generated method stub
+							return null;
+						}
+					}
+					```
+					</script>
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+					# Structure Summary
+
+					![aa](images/object_algebra_example.svg)
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						# Limitations
+
+						- Closed world hypothesis
+						- Only extensible by class inheritance
+
+					</script>
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+						# What's next?
+
+						- Hidding the generic types from the developer
+						- Integrating the *Model type* extensibility
+
+					</script>
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+						# Questions?
+					</script>
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
