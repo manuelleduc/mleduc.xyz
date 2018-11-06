@@ -3,9 +3,9 @@ layout: page
 title: Publications
 ---
 
-**Modular Language Composition for the Masses**  
+**Modular Language Composition for the Masses (*SLE’18 best artifact*)**  
 Manuel Leduc, Thomas Degueule, Benoit Combemale  
-In *Proceedings of the 11th International Conference on Software Language Engineering* (SLE), 2018. \[[PDF](https://hal.inria.fr/hal-01568169/document)\]
+In *Procerveedings of the 11th International Conference on Software Language Engineering* (SLE), 2018. \[[PDF](https://hal.inria.fr/hal-01890446/document)\] \[[slides](https://fr.slideshare.net/ManuelLeduc/modular-language-composition-for-the-masses)\]
 
 **Concern-Oriented Language Development (COLD): Fostering Reuse in Language Engineering**
 Benoit Combemale, Andreas Wortmann, Erwan Bousse, Gunter Mussbacher, Jean-Marc Jezequel, Jörg Kienzle, Manuel Leduc, Matthias Schöttle, Misha Strittmatter, Olivier Barais, Philippe Collet, Robert Heinrich, Sébastien Mosser, Tanja Mayerhofer, Thomas Degueule, Walter Cazzola  
