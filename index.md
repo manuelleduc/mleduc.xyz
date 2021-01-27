@@ -7,18 +7,26 @@ layout: home
 
 <img class="photo" src="{{ site.baseurl }}/assets/manu.JPG" />
 
-I am a PhD student in the [DiverSE](http://diverse.irisa.fr/) team
-with [Benoit Combemale](http://people.irisa.fr/Benoit.Combemale/) and [Olivier Barais](http://olivier.barais.fr/).
+I am an engineer at [XWiki SAS](https://xwiki.com/).
 
-I am interested in all aspect of Software Language Engineering and Language Engineering.
-My PhD is focused on the formal and executable specifications of Domain-Specific Language
-families. More precisely, I aim at improving reuse and agility of Domain-Specific software languages
-through modularity and variability of software languages formal specifications.
+{% if site.posts.size > 0 %}
+<h2 class="post-list-heading">{{ page.list_title | default: "Blog Posts" }}</h2>
+<ul class="post-list">
+  {% for post in site.posts %}
+  <li>
+    {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+    <span class="post-meta">{{ post.date | date: date_format }}</span>
+    <h3>
+      <a class="post-link" href="{{ post.url | relative_url }}">
+        {{ post.title | escape }}
+      </a>
+    </h3>
+    {% if site.show_excerpts %}
+      {{ post.excerpt }}
+    {% endif %}
+  </li>
+  {% endfor %}
+</ul>
 
-
-## Topics of interest
-
-- Software Language Engineering
-- Domain-Specific Language
-- Model-Driven Engineering
-- Software Product Lines
+<p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+{% endif %}
