@@ -17,8 +17,10 @@ title: Manuel Leduc
 email: manuel.leduc <<>> xwiki.com
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://mleduc.xyz" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: manuel_leduc
 github_username:  manuelleduc
+mastodon:
+  - username: mleduc
+    instance: framapiaf.org
 
 username: manuelleduc
 repo: mleduc.xyz

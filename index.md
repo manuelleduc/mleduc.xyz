@@ -5,9 +5,8 @@
 layout: home
 ---
 
-<img class="photo" src="{{ site.baseurl }}/assets/manu.JPG" />
-
-I am an engineer at [XWiki SAS](https://xwiki.com/).
+* [xwiki.org](https://xwiki.org) contributor
+* Software Engineer @[XWiki SAS](https://xwiki.com/)
 
 {% if site.posts.size > 0 %}
 <h2 class="post-list-heading">{{ page.list_title | default: "Blog Posts" }}</h2>
