@@ -14,7 +14,9 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Manuel Leduc
-email: manuel.leduc <<>> xwiki.com
+author:
+  name: Manuel Leduc
+  email: perso@mleduc.eu
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://mleduc.xyz" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  manuelleduc
@@ -30,7 +32,7 @@ markdown: kramdown
 theme: minima
 plugins:
   - jekyll-feed
-  - jekyll-sitemap
+  - jekyll-seo-tag
 exclude:
   - Gemfile
   - Gemfile.lock
