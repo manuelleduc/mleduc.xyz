@@ -5,20 +5,9 @@ canonifyurls = true
 languagecode = "en"
 theme = "black-and-light"
 
-pygmentsstyle       = "bw"
+pygmentsstyle       = "colorful"
 pygmentscodefences  = true
 
 [params]
-  sitename = "Black & Light"
+  sitename = "Manuel Leduc"
   disableWebFonts = false
-
-[[menu.main]]
-    name = "About"
-    url  = "https://github.com/davidhampgonsalves/hugo-black-and-light-theme"
-[[menu.main]]
-    name = "Projects"
-    url  = "https://github.com/davidhampgonsalves/hugo-black-and-light-theme"
-[[menu.main]]
-    name = "Resume"
-    url  = "https://github.com/davidhampgonsalves/hugo-black-and-light-theme"
-

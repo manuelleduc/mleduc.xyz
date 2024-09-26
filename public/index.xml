@@ -6,6 +6,14 @@
     <description>Recent content on Manuel Leduc</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
+    <lastBuildDate>Thu, 26 Sep 2024 11:32:52 +0200</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Object Algebra Composition</title>
+      <link>http://localhost:1313/scala/object/2016/10/20/object-algebra-composition.html</link>
+      <pubDate>Thu, 26 Sep 2024 11:32:52 +0200</pubDate>
+      <guid>http://localhost:1313/scala/object/2016/10/20/object-algebra-composition.html</guid>
+      <description>Introduction This article is composed of two parts. The first part explains the concept of &amp;ldquo;object algebras&amp;rdquo; using a toy example. The second part reuse the same toy example and extends it.&#xA;Object algebras The expression problem, as presented in Oleksandr Manzyuk&amp;rsquo;s blog, is a way to offer the capability for a DSL to be extensible either in term of operations and in term of expression types.&#xA;After reading Extensibility for the Masses - Practical Extensibility with Object Algebras I decided to give it a look and tried to add a few more features to the example provided by the authors.</description>
+    </item>
   </channel>
 </rss>
