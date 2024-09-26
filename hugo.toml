@@ -3,11 +3,11 @@ title = "Manuel Leduc"
 author = "Manuel Leduc"
 canonifyurls = true
 languagecode = "en"
-theme = "black-and-light"
+theme = "minima"
 
 pygmentsstyle       = "colorful"
 pygmentscodefences  = true
 
 [params]
-  sitename = "Manuel Leduc"
-  disableWebFonts = false
+  title = "Manuel Leduc"
+  description = "Test"

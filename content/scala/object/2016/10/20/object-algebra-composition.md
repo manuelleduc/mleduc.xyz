@@ -1,7 +1,6 @@
 +++
-title = 'Object Algebra Composition'
-date = 2024-09-26T11:32:52+02:00
-draft = true
+title = 'Object Algebras Composition'
+date = 2016-10-20 14:21:33+02:00
 url = '/scala/object/2016/10/20/object-algebra-composition.html'
 +++
 

@@ -1,439 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
 	<meta name="generator" content="Hugo 0.123.7"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
-    <meta charset="utf-8">
-    <meta name="HandheldFriendly" content="True">
-    <meta name="MobileOptimized" content="320">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="referrer" content="no-referrer">
-    <meta name="description" content="">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#262d33">
+  <title>
     
-      <link href="https://fonts.googleapis.com/css?family=Open+Sans:400|Old+Standard+TT:400&display=swap" rel="stylesheet" media="print" type="text/css" onload="this.media='all'">
+    Manuel Leduc 
     
+  </title>
+  
+  
+  <link rel="shortcut icon" href="http://localhost:1313/favicon.ico" type="image/x-icon" />
+  
+  
+  
+  <link rel="stylesheet" href="http://localhost:1313/minima.8b8fe1b3a00b31fff2d6431976edefe3fcdd9f39cfd6f06d9ffbbd7a77cf9b92.css" integrity="sha256-i4/hs6ALMf/y1kMZdu3v4/zdnznP1vBtn/u9enfPm5I=">
+  
+  
+  
+  <script defer type="text/javascript" src="http://localhost:1313/minima.f51e28c33804386969d6ae6ab42cca9bc9f3b51a3775b54dba424c65256da946.js" integrity="sha256-9R4owzgEOGlp1q5qtCzKm8nztRo3dbVNukJMZSVtqUY="></script>
+  
+  
+  
+</head>
+<script>
+  
+  const default_theme_config = ''
+  const default_light_theme = default_theme_config === 'system' ? 'light' : default_theme_config;
+  let default_theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : default_light_theme;
 
-    <title>
-      
-      
-         Manuel Leduc 
-      
-    </title>
-    <link rel="canonical" href="http://localhost:1313/">
-
-    <style>
-  * {
-    border:0;
-    font:inherit;
-    font-size:100%;
-    vertical-align:baseline;
-    margin:0;
-    padding:0;
-    color: black;
-    text-decoration-skip: ink;
-  }
-
-  body {
-    font-family:'Open Sans', 'Myriad Pro', Myriad, sans-serif;
-    font-size:17px;
-    line-height:160%;
-    color:#1d1313;
-    max-width:700px;
-    margin:auto;
-  }
-
-  p {
-    margin: 20px 0;
-  }
-
-  a img {
-    border:none;
-  }
-
-  img {
-    margin: 10px auto 10px auto;
-    max-width: 100%;
-    display: block;
-  }
-
-  .left-justify { float: left; }
-  .right-justify { float:right; }
-
-  pre, code {
-    font: 12px Consolas, "Liberation Mono", Menlo, Courier, monospace;
-    background-color: #f7f7f7;
-  }
-
-  code {
-    font-size: 12px;
-    padding: 4px;
-  }
-
-  pre {
-    margin-top: 0;
-    margin-bottom: 16px;
-    word-wrap: normal;
-    padding: 16px;
-    overflow: auto;
-    font-size: 85%;
-    line-height: 1.45;
-  }
-
-  pre>code {
-    padding: 0;
-    margin: 0;
-    font-size: 100%;
-    word-break: normal;
-    white-space: pre;
-    background: transparent;
-    border: 0;
-  }
-
-  pre code {
-    display: inline;
-    padding: 0;
-    margin: 0;
-    overflow: visible;
-    line-height: inherit;
-    word-wrap: normal;
-    background-color: transparent;
-    border: 0;
-  }
-
-  pre code::before,
-  pre code::after {
-    content: normal;
-  }
-
-  em,q,em,dfn {
-    font-style:italic;
-  }
-
-  .sans,html .gist .gist-file .gist-meta {
-    font-family:"Open Sans","Myriad Pro",Myriad,sans-serif;
-  }
-
-  .mono,pre,code,tt,p code,li code {
-    font-family:Menlo,Monaco,"Andale Mono","lucida console","Courier New",monospace;
-  }
-
-  .heading,.serif,h1,h2,h3 {
-    font-family:"Old Standard TT",serif;
-  }
-
-  strong {
-    font-weight:600;
-  }
-
-  q:before {
-    content:"\201C";
-  }
-
-  q:after {
-    content:"\201D";
-  }
-
-  del,s {
-    text-decoration:line-through;
-  }
-
-  blockquote {
-    font-family:"Old Standard TT",serif;
-    text-align:center;
-    padding:50px;
-  }
-
-  blockquote p {
-    display:inline-block;
-    font-style:italic;
-  }
-
-  blockquote:before,blockquote:after {
-    font-family:"Old Standard TT",serif;
-    content:'\201C';
-    font-size:35px;
-    color:#403c3b;
-  }
-
-  blockquote:after {
-    content:'\201D';
-  }
-
-  hr {
-    width:40%;
-    height: 1px;
-    background:#403c3b;
-    margin: 25px auto;
-  }
-
-  h1 {
-    font-size:35px;
-  }
-
-  h2 {
-    font-size:28px;
-  }
-
-  h3 {
-    font-size:22px;
-    margin-top:18px;
-  }
-
-  h1 a,h2 a,h3 a {
-    text-decoration:none;
-  }
-
-  h1,h2 {
-    margin-top:28px;
-  }
-
-  #sub-header, .date {
-    color:#403c3b;
-    font-size:13px;
-  }
-
-  #sub-header {
-    margin: 0 4px;
-  }
-
-  #nav h1 a {
-    font-size:35px;
-    color:#1d1313;
-    line-height:120%;
-  }
-
-  .posts_listing a,#nav a {
-    text-decoration: none;
-  }
-
-  li {
-    margin-left: 20px;
-  }
-
-  ul li {
-    margin-left: 5px;
-  }
-
-  ul li {
-    list-style-type: none;
-  }
-  ul li:before {
-    content:"\00BB \0020";
-  }
-
-  #nav ul li:before, .posts_listing li:before {
-    content:'';
-    margin-right:0;
-  }
-
-  #content {
-    text-align:left;
-    width:100%;
-    font-size:15px;
-    padding:60px 0 80px;
-  }
-
-  #content h1,#content h2 {
-    margin-bottom:5px;
-  }
-
-  #content h2 {
-    font-size:25px;
-  }
-
-  #content .entry-content {
-    margin-top:15px;
-  }
-
-  #content .date {
-    margin-left:3px;
-  }
-
-  #content h1 {
-    font-size:30px;
-  }
-
-  .highlight {
-    margin: 10px 0;
-  }
-
-  .posts_listing {
-    margin:0 0 50px;
-  }
-
-  .posts_listing li {
-    margin:0 0 25px 15px;
-  }
-
-  .posts_listing li a:hover,#nav a:hover {
-    text-decoration: underline;
-  }
-
-  #nav {
-    text-align:center;
-    position:static;
-    margin-top:60px;
-  }
-
-  #nav ul {
-    display: table;
-    margin: 8px auto 0 auto;
-  }
-
-  #nav li {
-    list-style-type:none;
-    display:table-cell;
-    font-size:15px;
-    padding: 0 20px;
-  }
-
-  #links {
-    display: flex;
-    justify-content: space-between;
-    margin: 50px 0 0 0;
-  }
-
-  #links :nth-child(1) {
-    margin-right:0.5em;;
-  }
-
-  #links :nth-child(2) {
-    margin-left:0.5em;;
-  }
-
-  #not-found {
-    text-align: center;
-  }
-
-  #not-found a {
-    font-family:"Old Standard TT",serif;
-    font-size: 200px;
-    text-decoration: none;
-    display: inline-block;
-    padding-top: 225px;
-  }
-
-  @media (max-width: 750px) {
-    body {
-      padding-left:20px;
-      padding-right:20px;
+  try {
+    const saved_theme = localStorage.getItem('theme')
+    if (saved_theme) {
+      default_theme = saved_theme === default_light_theme ? saved_theme : default_light_theme;  
     }
-
-    #nav h1 a {
-      font-size:28px;
-    }
-
-    #nav li {
-      font-size:13px;
-      padding: 0 15px;
-    }
-
-    #content {
-      margin-top:0;
-      padding-top:50px;
-      font-size:14px;
-    }
-
-    #content h1 {
-      font-size:25px;
-    }
-
-    #content h2 {
-      font-size:22px;
-    }
-
-    .posts_listing li div {
-      font-size:12px;
-    }
+    localStorage.setItem('theme', default_theme);
+    window.minima_theme = default_theme;
+    document.querySelector('html').classList.add(default_theme);
+  } catch (e) {
+    console.error(e);
   }
-
-  @media (max-width: 400px) {
-    body {
-      padding-left:20px;
-      padding-right:20px;
-    }
-
-    #nav h1 a {
-      font-size:22px;
-    }
-
-    #nav li {
-      font-size:12px;
-      padding: 0 10px;
-    }
-
-    #content {
-      margin-top:0;
-      padding-top:20px;
-      font-size:12px;
-    }
-
-    #content h1 {
-      font-size:20px;
-    }
-
-    #content h2 {
-      font-size:18px;
-    }
-
-    .posts_listing li div{
-      font-size:12px;
-    }
-  }
-
-  @media (prefers-color-scheme: dark) {
-    *, #nav h1 a {
-      color: #FDFDFD;
-    }
-
-    body {
-      background: #121212;
-    }
-
-    pre, code {
-      background-color: #262626;
-    }
-
-    #sub-header, .date {
-      color: #BABABA;
-    }
-
-    hr {
-      background: #EBEBEB;
-    }
-  }
-</style>
+</script>
 
 
-    <link rel="alternate" type="application/rss+xml" href="http://localhost:1313/index.xml" title="Manuel Leduc" />
-    </head>
 
-  <body>
-    <section id=nav>
-      <h1><a class="h-card" href="http://localhost:1313/">Manuel Leduc</a></h1>
-      <ul>
+<body>
+  <header class="mt-3 mb-6">
+  <div class="container mx-auto">
+    <nav class="flex justify-between items-center">
+      <div class="flex items-center">
+        
+        <div id="theme-switch" class="text-3xl cursor-pointer"></div>
+      </div>
+      <ul class="flex items-center text-base font-bold
+        whitespace-nowrap overflow-x-auto overflow-y-hidden">
         
       </ul>
-    </section>
-
-
-<section id=content>
-  <ul class=posts_listing>
-    
-      <li>
-        <h2><a href="http://localhost:1313/scala/object/2016/10/20/object-algebra-composition.html">Object Algebra Composition</a></h2>
-        <div class=date>
-          
-            September 2024
-          
-        </div>
-      </li>
-    
-  </ul>
-</section>
+      <ul class="flex item-center text-sm font-bold">
+        
+        <li class="ml-2"><a href="http://localhost:1313/"></a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</header>
 
   
+<main class="container mx-auto">
+  <h2 class="mt-8 text-3xl font-bold"></h2>
+  <p class="mt-0 mb-0"></p>
+  <p class="mt-3 mb-3 home-intro"></p>
+  
+  <h3 class="mt-6 mb-4 text-2xl font-bold">Recent Posts</h3>
+  
+  <div>
+    
+    
+    
+    <div>
+  <div class="flex flex-col-reverse sm:flex-row sm:justify-between">
+    
+    <a class="text-lg font-bold" href="http://localhost:1313/2024/02/04/fosdem-sustainability.html">Sustainability at FOSDEM 2024</a>
+    
+    
+  </div>
+  
+</div>
+    
+    
+    
+    <div>
+  <div class="flex flex-col-reverse sm:flex-row sm:justify-between">
+    
+    <a class="text-lg font-bold" href="http://localhost:1313/clojure/clojurescript/quil/processing/generative/art/2019/06/12/clojurescript-quil-demo.html">ClojureScript Quil Demo</a>
+    
+    
+  </div>
+  
+</div>
+    
+    
+    
+    <div>
+  <div class="flex flex-col-reverse sm:flex-row sm:justify-between">
+    
+    <a class="text-lg font-bold" href="http://localhost:1313/javac/javap/cast/java/compiler/2019/03/20/explicit-cast-cleanup.html">Does javac cleanup useless type casts?</a>
+    
+    
+  </div>
+  
+</div>
+    
+    
+    
+    <div>
+  <div class="flex flex-col-reverse sm:flex-row sm:justify-between">
+    
+    <a class="text-lg font-bold" href="http://localhost:1313/java/junit5/dynamic/unit/test/2019/03/11/dynamic-junit5.html">Dynamic Junit 5: The Hero with a Thousand Faces</a>
+    
+    
+  </div>
+  
+</div>
+    
+    
+    
+    <div>
+  <div class="flex flex-col-reverse sm:flex-row sm:justify-between">
+    
+    <a class="text-lg font-bold" href="http://localhost:1313/xtext/emf/2018/02/28/xtext-serialization.html">Xtext Serialization - Easier than I thought</a>
+    
+    
+  </div>
+  
+</div>
+    
+    
+    
+    <div>
+  <div class="flex flex-col-reverse sm:flex-row sm:justify-between">
+    
+    <a class="text-lg font-bold" href="http://localhost:1313/eclipse/2017/11/28/feature-ide-programmatically-getting-started.html">FeatureIDE Programmatically: Getting Started</a>
+    
+    
+  </div>
+  
+</div>
+    
+    
+    
+    <div>
+  <div class="flex flex-col-reverse sm:flex-row sm:justify-between">
+    
+    <a class="text-lg font-bold" href="http://localhost:1313/eclipse/2017/07/26/eclipse-plugin-generation.html">Eclipse Plugin Generation</a>
+    
+    
+  </div>
+  
+</div>
+    
+    
+    
+    <div>
+  <div class="flex flex-col-reverse sm:flex-row sm:justify-between">
+    
+    <a class="text-lg font-bold" href="http://localhost:1313/scala/object/2016/10/20/object-algebra-composition.html">Object Algebras Composition</a>
+    
+    
+  </div>
+  
+</div>
+    
+    
+    
+
+
+  </div>
+  
+</main>
+
+
+  <footer class="mt-8 mb-8">
+  <div class="container mx-auto">
+    <div class="mt-8 flex flex-col-reverse sm:flex-row sm:justify-between items-center">
+      <div class="text-center sm:text-left">
+        <p class="mt-0 text-sm"></p>
+        <p class="mt-0 text-xs">
+          Built with <a href="https://gohugo.io" target="_blank" rel="noopener noreferrer">Hugo</a> v0.123.7
+          and <a href="https://github.com/mivinci/hugo-theme-minima" target="_blank" rel="noopener noreferrer">Minima</a>
+        </p>
+      </div>
+      
+      <p class="flex items-center mt-0">
+        
+      </p>
+    </div>
+  </div>
+</footer>
 </body>
+
 </html>
-
-
