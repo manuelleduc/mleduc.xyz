@@ -2,6 +2,7 @@
 title = 'Does javac cleanup useless type casts?'
 date = 2019-03-20 13:04:00+02:00
 url = '/javac/javap/cast/java/compiler/2019/03/20/explicit-cast-cleanup.html'
+tags = ['javac', 'javap', 'cast', 'java', 'compiler']
 +++
 
 Often, writing code requires to test assumptions.

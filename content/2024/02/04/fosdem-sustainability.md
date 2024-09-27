@@ -2,6 +2,7 @@
 title = 'Sustainability at FOSDEM 2024'
 date = 2024-02-04 21:20:00+02:00
 url = '/2024/02/04/fosdem-sustainability.html'
+tags = ['fosdem', 'sustainability',  'open-source']
 +++
 
 Sustainability is a topic I'm interested in, and I got the chance to attend [FOSDEM 2024](https://fosdem.org/2024/).

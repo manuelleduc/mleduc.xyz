@@ -2,6 +2,7 @@
 title = 'Object Algebras Composition'
 date = 2016-10-20 14:21:33+02:00
 url = '/scala/object/2016/10/20/object-algebra-composition.html'
+tags = ['object algebras', 'composition']
 +++
 
 # Introduction
@@ -15,7 +16,7 @@ The expression problem, as presented in  [Oleksandr Manzyuk's blog](https://olek
 After reading [Extensibility for the Masses - *Practical Extensibility with Object Algebras*](http://www.cs.utexas.edu/~wcook/Drafts/2012/ecoop2012.pdf) I decided to give it a look and tried to add a few more features to the [example](http://i.cs.hku.hk/~bruno/oa/) provided by the authors.
 
 The architecture of the program is summarized in the following diagram :
-![Schema Example Architecture]({{ site.baseurl }}/assets/2016-10-20-object-algebra-composition/object_algebra_example.svg)
+![Schema Example Architecture](/object_algebra_example.svg)
 
 **PPrint** and **Eval** are two operations which respectivelly pretty print a program and eval it to an integer.
 
@@ -89,7 +90,7 @@ object Examples extends App {
 
 In order to study the advantages and limitation of this approach we are going to extend the previously explained use case with the notions of boolean operations (&&, \|\|, ==, !). We will also offer a way to guaranty that the left and side and right and side of the `==` operator are of the same type.
 
-![Schema Example Architecture]({{ site.baseurl }}/assets/2016-10-20-object-algebra-composition/object_algebra_extended.svg)
+![Schema Example Architecture](/object_algebra_extended.svg)
 
 ## Boolean operations
 

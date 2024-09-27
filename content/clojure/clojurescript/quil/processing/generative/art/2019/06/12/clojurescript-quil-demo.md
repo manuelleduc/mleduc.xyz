@@ -2,12 +2,15 @@
 title = 'ClojureScript Quil Demo'
 date = 2019-06-12 15:37:00+02:00
 url = '/clojure/clojurescript/quil/processing/generative/art/2019/06/12/clojurescript-quil-demo.html'
+tags = ['clojure', 'clojurescript', 'quil', 'processing', 'generative art']
 +++
 
 
+{{<rawhtml>}}
 <div id="hello-quil"></div>
-<script src="{{ "/assets/2019-06-12-clojurescript-quil-demo/js/main.js" | relative_url }}"></script>
+<script src="/clojurescript-quil-demo/main.js"></script>
 <script>hello_quil.core.run_sketch()</script>
+{{</rawhtml>}}
 
 ```clojure
 (ns hello-quil.core

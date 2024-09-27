@@ -1,13 +1,140 @@
-baseurl = "https://mleduc.xyz/"
+# baseURL = "https://mivinci.github.io/hugo-theme-minima"
+languageCode = "en-us"
 title = "Manuel Leduc"
-author = "Manuel Leduc"
-canonifyurls = true
-languagecode = "en"
+#copyright = "© 2020-2023 X"
+#paginate = 12
 theme = "minima"
+defaultContentLanguage = "en"
 
-pygmentsstyle       = "colorful"
-pygmentscodefences  = true
+# [languages.en]
+# languageName = "EN"
+# weight = 1
+
+# [languages.zh-cn]
+# languageName = "简中"
+# weight = 2
+
+#   [languages.zh-cn.author]
+#   status = "目前住在地球 🌍"
+#   description = """
+# 这是 Minima, 一个简洁的 Hugo 主题，移植自 [Hexo Minima](https://github.com/adisaktijrs/hexo-theme-minima)。
+# 支持深色模式、多语言、数学公式、流程图、代码语法高亮，当然还有分类、标签、系列等等。
+# """
+
+#   [languages.zh-cn.params]
+#   greet = "你好 :)"
+
+[author]
+name = "Manuel Leduc"
+# status = "Currently living on Earth 🌍"
+# description = """
+# This is Minima, a clean and minimal Hugo theme porting from 
+# [Hexo Minima](https://github.com/adisaktijrs/hexo-theme-minima). It has supports 
+# for dark mode, multilingual mode, math formulas, flowcharts, syntax highlighting, 
+# and of course taxonomies like categories, tags, and series.
+# """
 
 [params]
-  title = "Manuel Leduc"
-  description = "Test"
+# greet = "Hello :)"
+# switch = [ "🌚", "🌝" ]
+defaultTheme = "light"
+displayDate = true
+displayDescription = true
+selectable = true
+
+  [[params.social]]
+  name = "mastodon"
+  url = "https://framapiaf.org/@mleduc"
+
+  [[params.social]]
+  name = "email"
+  url = "mailto:perso@mleduc.eu"
+
+  [[params.social]]
+  name = "github"
+  url = "https://github.com/manuelleduc"
+
+  [[params.social]]
+  name = "rss"
+  url = "/index.xml"
+
+  [params.math]
+  enable = false
+  provider = "katex"
+
+  [params.diagram]
+  enable = false
+  provider = "mermaid"
+
+  # [params.comment]
+  # enable = true
+  # provider = "giscus"
+
+  #   [params.comment.disqus]
+  #   shortname = "hugo-minima"
+
+  #   [params.comment.utterances]
+  #   repo = "mivinci/hugo-theme-minima"
+  #   issueTerm = "pathname"
+  #   label = "comment"
+
+  #   [params.comment.giscus]
+  #   repo = "mivinci/hugo-theme-minima"
+  #   repoId = "MDEwOlJlcG9zaXRvcnkzODcxMjM2NDU="
+  #   category = "Comments"
+  #   categoryId = "DIC_kwDOFxMJvc4CScQm"
+  #   mapping = "pathname"
+  #   inputPosition = "buttom"
+  #   reactions = true
+  #   metadata = false
+
+  # [params.search]
+  # enable = false
+  # provider = "fuse"
+  # title = "Search"
+  # placeholder = "Enter keywords"
+
+  #   [params.search.fuse]
+  #   keys = [ "title", "permalink", "summary", "content" ]
+  #   distance = 100
+  #   location = 0
+  #   threshold = 0.6
+  #   ignoreLocation = false
+  #   isCaseSensitive = false
+  #   includeScore = false
+  #   includeMatches = false
+  #   minMatchCharLength = 1
+  #   shouldSort = true
+  #   findAllMatches = false
+
+[[menu.main]]
+identifier = '/'
+name = 'Home'
+weight = 1
+
+[[menu.main]]
+identifier = "tags"
+name = "Tags"
+weight = 2
+
+# [[menu.main]]
+# identifier = "series"
+# name = "Series"
+# weight = 2
+
+# [[menu.main]]
+# identifier = "search"
+# name = "🔍"
+# weight = 3
+
+[taxonomies]
+category = "categories"
+tag = "tags"
+series = "series"
+
+[outputs]
+home = [ "HTML", "RSS", "JSON" ]
+
+[markup.highlight]
+lineNos = true
+noClasses = false

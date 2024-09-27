@@ -2,6 +2,7 @@
 title = 'FeatureIDE Programmatically: Getting Started'
 date = 2017-11-28 17:36:00+02:00
 url = '/eclipse/2017/11/28/feature-ide-programmatically-getting-started.html'
+tags = ['feature', 'ide', 'eclipse', 'model', 'programmatically']
 +++
 
 **Update \#1** *Tuesday, December 12, 2017*: First update of the article with some improvement from my recent experiments with FeatureIDE API. The code is much cleaner and reasoning with the configurations is improved. I have added comments along the article explaining the changes.

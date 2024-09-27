@@ -2,6 +2,7 @@
 title = 'Eclipse Plugin Generation'
 date = 2017-07-26 17:53:00+02:00
 url = '/eclipse/2017/07/26/eclipse-plugin-generation.html'
+tags = ['pde', 'plugin', 'generation', 'programmatically']
 +++
 I am currently working with eclipse projects. Lots of eclipse projects. So much that I want to generate eclipse projects using java code (I hope to write another article of the why of this soon).
 

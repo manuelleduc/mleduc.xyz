@@ -2,6 +2,7 @@
 title = 'Dynamic Junit 5: The Hero with a Thousand Faces'
 date = 2019-03-11 10:50:00+02:00
 url = '/java/junit5/dynamic/unit/test/2019/03/11/dynamic-junit5.html'
+tags = ['java', 'junit5', 'dynamic', 'unit', 'test']
 +++
 
 Writting unit tests is a difficult and time consuming task.
@@ -63,7 +64,7 @@ class DynamicFileTest {
 
 The result of the execution is the usual Junit results summary displayed in the IDE, indistinguable from a static unit test result, as shown below.
 
-![screenshot of the unit test execution of IntelliJ]({{ site.baseurl }}/assets/screen-dynamic-tests.png)
+![screenshot of the unit test execution of IntelliJ](/screen-dynamic-tests.png)
 
 An exhaustive version, with maven integration is available on my [github account](https://github.com/manuelleduc/junit5-dynamic-test-example).
 

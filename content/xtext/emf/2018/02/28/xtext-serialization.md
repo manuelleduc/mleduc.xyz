@@ -2,6 +2,7 @@
 title = 'Xtext Serialization - Easier than I thought'
 date = 2018-02-28 11:54:00+02:00
 url = '/xtext/emf/2018/02/28/xtext-serialization.html'
+tags = [ "xtext", "emf", "serialization" ]
 +++
 
 # Introduction
