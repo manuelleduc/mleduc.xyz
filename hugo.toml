@@ -1,4 +1,4 @@
-# baseURL = "https://mivinci.github.io/hugo-theme-minima"
+baseURL = "https://mleduc.xyz"
 languageCode = "en-us"
 title = "Manuel Leduc"
 #copyright = "© 2020-2023 X"
@@ -26,7 +26,7 @@ defaultContentLanguage = "en"
 
 [author]
 name = "Manuel Leduc"
-# status = "Currently living on Earth 🌍"
+status = "Manuel Leduc Blog"
 # description = """
 # This is Minima, a clean and minimal Hugo theme porting from 
 # [Hexo Minima](https://github.com/adisaktijrs/hexo-theme-minima). It has supports 
@@ -88,24 +88,24 @@ selectable = true
   #   reactions = true
   #   metadata = false
 
-  # [params.search]
-  # enable = false
-  # provider = "fuse"
-  # title = "Search"
-  # placeholder = "Enter keywords"
+  [params.search]
+  enable = true
+  provider = "fuse"
+  title = "Search"
+  placeholder = "Enter keywords"
 
-  #   [params.search.fuse]
-  #   keys = [ "title", "permalink", "summary", "content" ]
-  #   distance = 100
-  #   location = 0
-  #   threshold = 0.6
-  #   ignoreLocation = false
-  #   isCaseSensitive = false
-  #   includeScore = false
-  #   includeMatches = false
-  #   minMatchCharLength = 1
-  #   shouldSort = true
-  #   findAllMatches = false
+    [params.search.fuse]
+    keys = [ "title", "permalink", "summary", "content" ]
+    distance = 100
+    location = 0
+    threshold = 0.6
+    ignoreLocation = false
+    isCaseSensitive = false
+    includeScore = false
+    includeMatches = false
+    minMatchCharLength = 1
+    shouldSort = true
+    findAllMatches = false
 
 [[menu.main]]
 identifier = '/'
@@ -116,6 +116,11 @@ weight = 1
 identifier = "tags"
 name = "Tags"
 weight = 2
+
+[[menu.main]]
+identifier = "search"
+name = "🔍"
+weight = 3
 
 # [[menu.main]]
 # identifier = "series"

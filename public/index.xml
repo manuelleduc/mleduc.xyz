@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Manuel Leduc</title>
-    <link>//localhost:1313/</link>
+    <link>https://mleduc.xyz/</link>
     <description>Recent content on Manuel Leduc</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 04 Feb 2024 21:20:00 +0200</lastBuildDate><atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 04 Feb 2024 21:20:00 +0200</lastBuildDate><atom:link href="https://mleduc.xyz/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Sustainability at FOSDEM 2024</title>
-      <link>//localhost:1313/2024/02/04/fosdem-sustainability.html</link>
+      <link>https://mleduc.xyz/2024/02/04/fosdem-sustainability.html</link>
       <pubDate>Sun, 04 Feb 2024 21:20:00 +0200</pubDate>
       
-      <guid>//localhost:1313/2024/02/04/fosdem-sustainability.html</guid>
+      <guid>https://mleduc.xyz/2024/02/04/fosdem-sustainability.html</guid>
       <description>Sustainability is a topic I&amp;rsquo;m interested in, and I got the chance to attend FOSDEM 2024. This seems like a great opportunity to do a quick summary of all the talks linked to sustainability in the Open Source world presented during the event!
 By sustainability, I here mean the ecological sense of the term, in opposition to project growth as I saw it used that way in several abstracts.
 Disclaimer: I was part of the audience for some of the talks listed below, but given the astronomic number of talks, I wasn&amp;rsquo;t there for all of them.</description>
@@ -20,29 +20,29 @@ Disclaimer: I was part of the audience for some of the talks listed below, but g
     
     <item>
       <title>ClojureScript Quil Demo</title>
-      <link>//localhost:1313/clojure/clojurescript/quil/processing/generative/art/2019/06/12/clojurescript-quil-demo.html</link>
+      <link>https://mleduc.xyz/clojure/clojurescript/quil/processing/generative/art/2019/06/12/clojurescript-quil-demo.html</link>
       <pubDate>Wed, 12 Jun 2019 15:37:00 +0200</pubDate>
       
-      <guid>//localhost:1313/clojure/clojurescript/quil/processing/generative/art/2019/06/12/clojurescript-quil-demo.html</guid>
+      <guid>https://mleduc.xyz/clojure/clojurescript/quil/processing/generative/art/2019/06/12/clojurescript-quil-demo.html</guid>
       <description>1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 (ns hello-quil.core (:require [quil.core :as q :include-macros true] [quil.middleware :as m])) (def max-itt 250) (def width 740) (defn setup [] (q/color-mode :hsb 360 100 100) {:color 0 :angle 0}) (defn update-state [state] {:itt (+ (:itt state) 1)}) (defn power-curve [] (let [i (int (q/random 1 30))] (cond (= i 1) 6 (= i 2) 2 (= i 3) 2 (= i 4) 2 :else 1))) (defn draw-state [state] (let [itt (:itt state)] (if (= itt 0) (q/background 255)) (q/translate (* 0.</description>
     </item>
     
     <item>
       <title>Does javac cleanup useless type casts?</title>
-      <link>//localhost:1313/javac/javap/cast/java/compiler/2019/03/20/explicit-cast-cleanup.html</link>
+      <link>https://mleduc.xyz/javac/javap/cast/java/compiler/2019/03/20/explicit-cast-cleanup.html</link>
       <pubDate>Wed, 20 Mar 2019 13:04:00 +0200</pubDate>
       
-      <guid>//localhost:1313/javac/javap/cast/java/compiler/2019/03/20/explicit-cast-cleanup.html</guid>
+      <guid>https://mleduc.xyz/javac/javap/cast/java/compiler/2019/03/20/explicit-cast-cleanup.html</guid>
       <description>Often, writing code requires to test assumptions. The easiest way is often to do some research on the net. But when the first few queries do not return a useful result, it is time to test the assumption by ourselves.
 In my case, I was wondering whether explicitly casting a variable to its static type introduces a cast in the compiled bytecode1. For instance, in the program below the cast from int to int is useless and could be removed during compilation.</description>
     </item>
     
     <item>
       <title>Dynamic Junit 5: The Hero with a Thousand Faces</title>
-      <link>//localhost:1313/java/junit5/dynamic/unit/test/2019/03/11/dynamic-junit5.html</link>
+      <link>https://mleduc.xyz/java/junit5/dynamic/unit/test/2019/03/11/dynamic-junit5.html</link>
       <pubDate>Mon, 11 Mar 2019 10:50:00 +0200</pubDate>
       
-      <guid>//localhost:1313/java/junit5/dynamic/unit/test/2019/03/11/dynamic-junit5.html</guid>
+      <guid>https://mleduc.xyz/java/junit5/dynamic/unit/test/2019/03/11/dynamic-junit5.html</guid>
       <description>Writting unit tests is a difficult and time consuming task. And, in my opinion, even more when used to test code generating programs, such as compiler.
 But as it is something I am dealing with on a daly basis, writting a compiler for ALE, why not automate some part of if and make my life easier?
 Consequently, I wanted to load some programs, produce a result and compare each file to the expected result.</description>
@@ -50,20 +50,20 @@ Consequently, I wanted to load some programs, produce a result and compare each 
     
     <item>
       <title>Xtext Serialization - Easier than I thought</title>
-      <link>//localhost:1313/xtext/emf/2018/02/28/xtext-serialization.html</link>
+      <link>https://mleduc.xyz/xtext/emf/2018/02/28/xtext-serialization.html</link>
       <pubDate>Wed, 28 Feb 2018 11:54:00 +0200</pubDate>
       
-      <guid>//localhost:1313/xtext/emf/2018/02/28/xtext-serialization.html</guid>
+      <guid>https://mleduc.xyz/xtext/emf/2018/02/28/xtext-serialization.html</guid>
       <description>Introduction We often think of Xtext as a solution to transform text files into EMF models. But the opposite is also possible and one can transform a EMF model into a text file. Such a transformation is and is called serialization.
 Serializing an EMF model has various use cases, from saving the intermediate representation of a compilation to operate transformations on a xtext program before transforming it back into text (e.</description>
     </item>
     
     <item>
       <title>FeatureIDE Programmatically: Getting Started</title>
-      <link>//localhost:1313/eclipse/2017/11/28/feature-ide-programmatically-getting-started.html</link>
+      <link>https://mleduc.xyz/eclipse/2017/11/28/feature-ide-programmatically-getting-started.html</link>
       <pubDate>Tue, 28 Nov 2017 17:36:00 +0200</pubDate>
       
-      <guid>//localhost:1313/eclipse/2017/11/28/feature-ide-programmatically-getting-started.html</guid>
+      <guid>https://mleduc.xyz/eclipse/2017/11/28/feature-ide-programmatically-getting-started.html</guid>
       <description>Update #1 Tuesday, December 12, 2017: First update of the article with some improvement from my recent experiments with FeatureIDE API. The code is much cleaner and reasoning with the configurations is improved. I have added comments along the article explaining the changes.
 Part of my research and engineering activities are currently focused on the variability aspect of software languages.
 IMHO, FeatureIDE is the best plugin to deal with the expression of the variability of software components, using Feature Models.</description>
@@ -71,10 +71,10 @@ IMHO, FeatureIDE is the best plugin to deal with the expression of the variabili
     
     <item>
       <title>Eclipse Plugin Generation</title>
-      <link>//localhost:1313/eclipse/2017/07/26/eclipse-plugin-generation.html</link>
+      <link>https://mleduc.xyz/eclipse/2017/07/26/eclipse-plugin-generation.html</link>
       <pubDate>Wed, 26 Jul 2017 17:53:00 +0200</pubDate>
       
-      <guid>//localhost:1313/eclipse/2017/07/26/eclipse-plugin-generation.html</guid>
+      <guid>https://mleduc.xyz/eclipse/2017/07/26/eclipse-plugin-generation.html</guid>
       <description>I am currently working with eclipse projects. Lots of eclipse projects. So much that I want to generate eclipse projects using java code (I hope to write another article of the why of this soon).
 Surprisingly this task is not really complicated but requires an awful lot of code to work.
 So once I made it work if felt the need to share it as I did not found much documentation.</description>
@@ -82,13 +82,22 @@ So once I made it work if felt the need to share it as I did not found much docu
     
     <item>
       <title>Object Algebras Composition</title>
-      <link>//localhost:1313/scala/object/2016/10/20/object-algebra-composition.html</link>
+      <link>https://mleduc.xyz/scala/object/2016/10/20/object-algebra-composition.html</link>
       <pubDate>Thu, 20 Oct 2016 14:21:33 +0200</pubDate>
       
-      <guid>//localhost:1313/scala/object/2016/10/20/object-algebra-composition.html</guid>
+      <guid>https://mleduc.xyz/scala/object/2016/10/20/object-algebra-composition.html</guid>
       <description>Introduction This article is composed of two parts. The first part explains the concept of &amp;ldquo;object algebras&amp;rdquo; using a toy example. The second part reuse the same toy example and extends it.
 Object algebras The expression problem, as presented in Oleksandr Manzyuk&amp;rsquo;s blog, is a way to offer the capability for a DSL to be extensible either in term of operations and in term of expression types.
 After reading Extensibility for the Masses - Practical Extensibility with Object Algebras I decided to give it a look and tried to add a few more features to the example provided by the authors.</description>
+    </item>
+    
+    <item>
+      <title>Search</title>
+      <link>https://mleduc.xyz/search/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://mleduc.xyz/search/</guid>
+      <description></description>
     </item>
     
   </channel>

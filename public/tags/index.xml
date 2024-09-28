@@ -2,220 +2,220 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Manuel Leduc</title>
-    <link>//localhost:1313/tags/</link>
+    <link>https://mleduc.xyz/tags/</link>
     <description>Recent content in Tags on Manuel Leduc</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 04 Feb 2024 21:20:00 +0200</lastBuildDate>
-    <atom:link href="//localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://mleduc.xyz/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Fosdem</title>
-      <link>//localhost:1313/tags/fosdem/</link>
+      <link>https://mleduc.xyz/tags/fosdem/</link>
       <pubDate>Sun, 04 Feb 2024 21:20:00 +0200</pubDate>
-      <guid>//localhost:1313/tags/fosdem/</guid>
+      <guid>https://mleduc.xyz/tags/fosdem/</guid>
       <description></description>
     </item>
     <item>
       <title>Open-Source</title>
-      <link>//localhost:1313/tags/open-source/</link>
+      <link>https://mleduc.xyz/tags/open-source/</link>
       <pubDate>Sun, 04 Feb 2024 21:20:00 +0200</pubDate>
-      <guid>//localhost:1313/tags/open-source/</guid>
+      <guid>https://mleduc.xyz/tags/open-source/</guid>
       <description></description>
     </item>
     <item>
       <title>Sustainability</title>
-      <link>//localhost:1313/tags/sustainability/</link>
+      <link>https://mleduc.xyz/tags/sustainability/</link>
       <pubDate>Sun, 04 Feb 2024 21:20:00 +0200</pubDate>
-      <guid>//localhost:1313/tags/sustainability/</guid>
+      <guid>https://mleduc.xyz/tags/sustainability/</guid>
       <description></description>
     </item>
     <item>
       <title>Clojure</title>
-      <link>//localhost:1313/tags/clojure/</link>
+      <link>https://mleduc.xyz/tags/clojure/</link>
       <pubDate>Wed, 12 Jun 2019 15:37:00 +0200</pubDate>
-      <guid>//localhost:1313/tags/clojure/</guid>
+      <guid>https://mleduc.xyz/tags/clojure/</guid>
       <description></description>
     </item>
     <item>
       <title>Clojurescript</title>
-      <link>//localhost:1313/tags/clojurescript/</link>
+      <link>https://mleduc.xyz/tags/clojurescript/</link>
       <pubDate>Wed, 12 Jun 2019 15:37:00 +0200</pubDate>
-      <guid>//localhost:1313/tags/clojurescript/</guid>
+      <guid>https://mleduc.xyz/tags/clojurescript/</guid>
       <description></description>
     </item>
     <item>
       <title>Generative Art</title>
-      <link>//localhost:1313/tags/generative-art/</link>
+      <link>https://mleduc.xyz/tags/generative-art/</link>
       <pubDate>Wed, 12 Jun 2019 15:37:00 +0200</pubDate>
-      <guid>//localhost:1313/tags/generative-art/</guid>
+      <guid>https://mleduc.xyz/tags/generative-art/</guid>
       <description></description>
     </item>
     <item>
       <title>Processing</title>
-      <link>//localhost:1313/tags/processing/</link>
+      <link>https://mleduc.xyz/tags/processing/</link>
       <pubDate>Wed, 12 Jun 2019 15:37:00 +0200</pubDate>
-      <guid>//localhost:1313/tags/processing/</guid>
+      <guid>https://mleduc.xyz/tags/processing/</guid>
       <description></description>
     </item>
     <item>
       <title>Quil</title>
-      <link>//localhost:1313/tags/quil/</link>
+      <link>https://mleduc.xyz/tags/quil/</link>
       <pubDate>Wed, 12 Jun 2019 15:37:00 +0200</pubDate>
-      <guid>//localhost:1313/tags/quil/</guid>
+      <guid>https://mleduc.xyz/tags/quil/</guid>
       <description></description>
     </item>
     <item>
       <title>Cast</title>
-      <link>//localhost:1313/tags/cast/</link>
+      <link>https://mleduc.xyz/tags/cast/</link>
       <pubDate>Wed, 20 Mar 2019 13:04:00 +0200</pubDate>
-      <guid>//localhost:1313/tags/cast/</guid>
+      <guid>https://mleduc.xyz/tags/cast/</guid>
       <description></description>
     </item>
     <item>
       <title>Compiler</title>
-      <link>//localhost:1313/tags/compiler/</link>
+      <link>https://mleduc.xyz/tags/compiler/</link>
       <pubDate>Wed, 20 Mar 2019 13:04:00 +0200</pubDate>
-      <guid>//localhost:1313/tags/compiler/</guid>
+      <guid>https://mleduc.xyz/tags/compiler/</guid>
       <description></description>
     </item>
     <item>
       <title>Java</title>
-      <link>//localhost:1313/tags/java/</link>
+      <link>https://mleduc.xyz/tags/java/</link>
       <pubDate>Wed, 20 Mar 2019 13:04:00 +0200</pubDate>
-      <guid>//localhost:1313/tags/java/</guid>
+      <guid>https://mleduc.xyz/tags/java/</guid>
       <description></description>
     </item>
     <item>
       <title>Javac</title>
-      <link>//localhost:1313/tags/javac/</link>
+      <link>https://mleduc.xyz/tags/javac/</link>
       <pubDate>Wed, 20 Mar 2019 13:04:00 +0200</pubDate>
-      <guid>//localhost:1313/tags/javac/</guid>
+      <guid>https://mleduc.xyz/tags/javac/</guid>
       <description></description>
     </item>
     <item>
       <title>Javap</title>
-      <link>//localhost:1313/tags/javap/</link>
+      <link>https://mleduc.xyz/tags/javap/</link>
       <pubDate>Wed, 20 Mar 2019 13:04:00 +0200</pubDate>
-      <guid>//localhost:1313/tags/javap/</guid>
+      <guid>https://mleduc.xyz/tags/javap/</guid>
       <description></description>
     </item>
     <item>
       <title>Dynamic</title>
-      <link>//localhost:1313/tags/dynamic/</link>
+      <link>https://mleduc.xyz/tags/dynamic/</link>
       <pubDate>Mon, 11 Mar 2019 10:50:00 +0200</pubDate>
-      <guid>//localhost:1313/tags/dynamic/</guid>
+      <guid>https://mleduc.xyz/tags/dynamic/</guid>
       <description></description>
     </item>
     <item>
       <title>Junit5</title>
-      <link>//localhost:1313/tags/junit5/</link>
+      <link>https://mleduc.xyz/tags/junit5/</link>
       <pubDate>Mon, 11 Mar 2019 10:50:00 +0200</pubDate>
-      <guid>//localhost:1313/tags/junit5/</guid>
+      <guid>https://mleduc.xyz/tags/junit5/</guid>
       <description></description>
     </item>
     <item>
       <title>Test</title>
-      <link>//localhost:1313/tags/test/</link>
+      <link>https://mleduc.xyz/tags/test/</link>
       <pubDate>Mon, 11 Mar 2019 10:50:00 +0200</pubDate>
-      <guid>//localhost:1313/tags/test/</guid>
+      <guid>https://mleduc.xyz/tags/test/</guid>
       <description></description>
     </item>
     <item>
       <title>Unit</title>
-      <link>//localhost:1313/tags/unit/</link>
+      <link>https://mleduc.xyz/tags/unit/</link>
       <pubDate>Mon, 11 Mar 2019 10:50:00 +0200</pubDate>
-      <guid>//localhost:1313/tags/unit/</guid>
+      <guid>https://mleduc.xyz/tags/unit/</guid>
       <description></description>
     </item>
     <item>
       <title>Emf</title>
-      <link>//localhost:1313/tags/emf/</link>
+      <link>https://mleduc.xyz/tags/emf/</link>
       <pubDate>Wed, 28 Feb 2018 11:54:00 +0200</pubDate>
-      <guid>//localhost:1313/tags/emf/</guid>
+      <guid>https://mleduc.xyz/tags/emf/</guid>
       <description></description>
     </item>
     <item>
       <title>Serialization</title>
-      <link>//localhost:1313/tags/serialization/</link>
+      <link>https://mleduc.xyz/tags/serialization/</link>
       <pubDate>Wed, 28 Feb 2018 11:54:00 +0200</pubDate>
-      <guid>//localhost:1313/tags/serialization/</guid>
+      <guid>https://mleduc.xyz/tags/serialization/</guid>
       <description></description>
     </item>
     <item>
       <title>Xtext</title>
-      <link>//localhost:1313/tags/xtext/</link>
+      <link>https://mleduc.xyz/tags/xtext/</link>
       <pubDate>Wed, 28 Feb 2018 11:54:00 +0200</pubDate>
-      <guid>//localhost:1313/tags/xtext/</guid>
+      <guid>https://mleduc.xyz/tags/xtext/</guid>
       <description></description>
     </item>
     <item>
       <title>Eclipse</title>
-      <link>//localhost:1313/tags/eclipse/</link>
+      <link>https://mleduc.xyz/tags/eclipse/</link>
       <pubDate>Tue, 28 Nov 2017 17:36:00 +0200</pubDate>
-      <guid>//localhost:1313/tags/eclipse/</guid>
+      <guid>https://mleduc.xyz/tags/eclipse/</guid>
       <description></description>
     </item>
     <item>
       <title>Feature</title>
-      <link>//localhost:1313/tags/feature/</link>
+      <link>https://mleduc.xyz/tags/feature/</link>
       <pubDate>Tue, 28 Nov 2017 17:36:00 +0200</pubDate>
-      <guid>//localhost:1313/tags/feature/</guid>
+      <guid>https://mleduc.xyz/tags/feature/</guid>
       <description></description>
     </item>
     <item>
       <title>Ide</title>
-      <link>//localhost:1313/tags/ide/</link>
+      <link>https://mleduc.xyz/tags/ide/</link>
       <pubDate>Tue, 28 Nov 2017 17:36:00 +0200</pubDate>
-      <guid>//localhost:1313/tags/ide/</guid>
+      <guid>https://mleduc.xyz/tags/ide/</guid>
       <description></description>
     </item>
     <item>
       <title>Model</title>
-      <link>//localhost:1313/tags/model/</link>
+      <link>https://mleduc.xyz/tags/model/</link>
       <pubDate>Tue, 28 Nov 2017 17:36:00 +0200</pubDate>
-      <guid>//localhost:1313/tags/model/</guid>
+      <guid>https://mleduc.xyz/tags/model/</guid>
       <description></description>
     </item>
     <item>
       <title>Programmatically</title>
-      <link>//localhost:1313/tags/programmatically/</link>
+      <link>https://mleduc.xyz/tags/programmatically/</link>
       <pubDate>Tue, 28 Nov 2017 17:36:00 +0200</pubDate>
-      <guid>//localhost:1313/tags/programmatically/</guid>
+      <guid>https://mleduc.xyz/tags/programmatically/</guid>
       <description></description>
     </item>
     <item>
       <title>Generation</title>
-      <link>//localhost:1313/tags/generation/</link>
+      <link>https://mleduc.xyz/tags/generation/</link>
       <pubDate>Wed, 26 Jul 2017 17:53:00 +0200</pubDate>
-      <guid>//localhost:1313/tags/generation/</guid>
+      <guid>https://mleduc.xyz/tags/generation/</guid>
       <description></description>
     </item>
     <item>
       <title>Pde</title>
-      <link>//localhost:1313/tags/pde/</link>
+      <link>https://mleduc.xyz/tags/pde/</link>
       <pubDate>Wed, 26 Jul 2017 17:53:00 +0200</pubDate>
-      <guid>//localhost:1313/tags/pde/</guid>
+      <guid>https://mleduc.xyz/tags/pde/</guid>
       <description></description>
     </item>
     <item>
       <title>Plugin</title>
-      <link>//localhost:1313/tags/plugin/</link>
+      <link>https://mleduc.xyz/tags/plugin/</link>
       <pubDate>Wed, 26 Jul 2017 17:53:00 +0200</pubDate>
-      <guid>//localhost:1313/tags/plugin/</guid>
+      <guid>https://mleduc.xyz/tags/plugin/</guid>
       <description></description>
     </item>
     <item>
       <title>Composition</title>
-      <link>//localhost:1313/tags/composition/</link>
+      <link>https://mleduc.xyz/tags/composition/</link>
       <pubDate>Thu, 20 Oct 2016 14:21:33 +0200</pubDate>
-      <guid>//localhost:1313/tags/composition/</guid>
+      <guid>https://mleduc.xyz/tags/composition/</guid>
       <description></description>
     </item>
     <item>
       <title>Object Algebras</title>
-      <link>//localhost:1313/tags/object-algebras/</link>
+      <link>https://mleduc.xyz/tags/object-algebras/</link>
       <pubDate>Thu, 20 Oct 2016 14:21:33 +0200</pubDate>
-      <guid>//localhost:1313/tags/object-algebras/</guid>
+      <guid>https://mleduc.xyz/tags/object-algebras/</guid>
       <description></description>
     </item>
   </channel>
