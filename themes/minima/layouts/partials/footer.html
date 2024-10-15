@@ -1,0 +1,44 @@
+<footer class="mt-8 mb-8">
+  <div class="container mx-auto">
+    <div class="mt-8 flex flex-col-reverse sm:flex-row sm:justify-between items-center">
+      <div class="text-center sm:text-left">
+        <p class="mt-0 text-sm">
+          {{ .Site.Copyright }}
+          <div id="wcb" class="carbonbadge"></div>
+          <script src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js" defer></script>  
+        </p>
+        <p class="mt-0 text-xs">
+          Built with <a href="https://gohugo.io" target="_blank" rel="noopener noreferrer">Hugo</a> v{{ .Site.Hugo.Version }}
+          and <a href="https://github.com/mivinci/hugo-theme-minima" target="_blank" rel="noopener noreferrer">Minima</a>
+        </p>
+      </div>
+      
+      <p class="flex items-center mt-0">
+        {{ range $_, $key := .Site.Params.Social }}
+          <a class="icon ml-1 mr-1" href="{{ $key.url }}" title="{{ $key.name }}">
+          {{ if $key.svg }}
+            {{ $key.svg | safeHTML }}
+          {{ else }}
+            {{ index $.Site.Data.svg $key.name | safeHTML }}
+          {{ end }}
+          </a>
+        {{ end }}
+      </p>
+    </div>
+  </div>
+  <!-- Matomo -->
+<script>
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//matomo.mleduc.xyz/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '1']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Matomo Code -->
+</footer>
